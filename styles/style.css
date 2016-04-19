@@ -1,0 +1,432 @@
+/* ===================================
+            GLOBAL STYLES
+======================================*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* Add default fonts etc*/
+}
+
+h1 {
+    margin: 0;
+    font-size: 98px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 19px;
+    letter-spacing: 0.02em;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    max-width: 2040px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.btn {
+    margin: 0 auto;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    min-height: 250px;
+    background-color: #3767BF;
+    display: flex;
+}
+
+.footer-links {
+    widows: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-links h2 {
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.footer-links h2:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.footer-links p {
+    margin-bottom: 35px;
+}
+
+.footer-links a {
+        color: #fff;
+        margin: auto;
+    }
+
+    .footer-links a:hover {
+        border-bottom: 2px solid #fff;
+    }
+
+p.signature {
+    margin-bottom: 0;
+}
+
+
+/* ===================================
+            HOMEPAGE HEADER
+======================================*/
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/island.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    position: relative;
+/*    background-position: center;*/
+}
+
+.main-nav{
+    width: 85%;
+    margin-left: 7.5%;
+    position: absolute;
+    display: flex;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.08em
+}
+
+    .main-nav ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        margin-top: 55px;
+    }
+
+    .main-nav ul li {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    .main-nav ul li:nth-child(3) {
+        flex-grow: 1;
+        text-align: left;
+        display: flex;
+        font-size: 1.2em;
+        margin-top: -20px;
+    }
+
+    .main-nav a {
+        color: #fff;
+        margin: auto;
+    }
+
+    .main-nav a:hover {
+        border-bottom: 2px solid #fff;
+    }
+
+    a.logo:hover {
+        border-bottom: none;
+    }
+
+
+
+.hero-text-box {
+    width: 65%;
+    margin: auto;
+    text-align: left;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+    .hero-text-box h1 {
+        margin-top: 30px;
+    }
+
+    .hero-text-box p {
+        margin-top: 40px;
+    }
+
+.down-arrow {
+/*    margin: 0 auto;*/
+    color: #fff;
+    margin: auto;
+    font-size: 1.8em;
+        
+}
+
+.fa-long-arrow-down:before {
+    content: "\f175";
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    margin: auto;
+}
+
+/* ===================================
+        HOMEPAGE ABOUT SECTION
+======================================*/
+
+.about-banner {
+    min-height: 400px;
+    background-color: #1A1A1A;
+    display: flex;
+}
+
+.about-divider {
+    display: flex;
+/*    flex-grow: 1;*/
+    width: 50%;
+}
+
+.about-paragraph {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.about-divider p {
+    flex-wrap: wrap;
+}
+
+.about-divider a {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.about-img {
+    width: 70%;
+    height: 250px;
+    margin: auto;
+    background: url("https://scontent-iad3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/376290_241772232555807_2107635268_n.jpg?oh=78adf6c8aff0f140ab3ede95f6634bf6&oe=5777055B");
+    background-size: cover;
+    background-position: center;
+}
+
+#about-btn {
+    background-color: #EEE5D4;
+    margin-top: 40px;
+    color: #1A1A1A;
+    padding: 10px 45px;
+}
+
+#about-btn:hover {
+    cursor: pointer;
+}
+
+    #about-btn i {
+        font-size: 1.2em;
+    }
+
+/* ====================================
+        HOMEPAGE PROJECTS SECTION
+======================================*/
+
+.featured-projects {
+    background-color: #EEE5D4;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-projects-title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 7px;
+
+}
+
+    .featured-projects-title h3 {
+        margin: auto;
+        font-size: 1.5em;
+    }
+
+.featured-projects-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.featured-project {
+    display: flex;
+    flex-grow: 1;
+    height: 260px;
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+    .featured-project:first-child {
+        margin-left: 40px;
+    }
+
+    .featured-project:last-child {
+        margin-right: 40px;
+    }
+
+.project-name {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+/*    text-transform: uppercase;*/
+    color: #fff;
+    text-align: center;
+    font-size: 1.3em;
+    z-index: 10000;
+    transition: all 0.7s;
+    
+}
+
+    .project-name p {
+        font-size: 1.1em;
+    }
+    .project-name i {
+        font-size: 1.8em;
+        margin-bottom: 12px;
+    }
+
+    .project-name a {
+        color: #fff;
+    }
+
+    .project-name a:hover {
+        border-bottom: 2px solid #fff;
+    }
+
+#proj1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://carolrico.tmrenagent.com/files/2013/11/maine_homes3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#proj2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://www.bobfenton.com/lighthouse.point.maine.house.interior.lg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#proj3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://jim-riley.com/themes/peach/images/web_cover.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.project-description-wrapper {
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+
+.project-description {
+    flex-grow: 1;
+    height: 260px;
+    margin: 20px;
+    text-align: center;
+}
+
+    .project-description:first-child {
+        margin-left: 40px;
+    }
+
+    .project-description:last-child {
+        margin-right: 40px;
+    }
+
+    .project-description p {
+        font-size: 18px;
+        line-height: 24px;
+    }   
+
+#projects-btn {
+    background-color: #1A1A1A;
+    margin-top: 45px;
+    margin-bottom: 70px;
+    color: #fff;
+    padding: 15px 55px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+}
+
+/* ====================================
+        HOMEPAGE ISLAND SECTION
+======================================*/
+
+.island-banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/nh.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.island-banner-title {
+    margin: auto;
+    padding-top: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+#island-btn {
+    background-color: #1A1A1A;
+    margin-top: 45px;
+    color: #fff;
+    padding: 15px 55px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+.home-images {
+    width: 100%;
+    height: 575px;
+}
+
+#bottom-featured-img {
+    background: url("https://www.davidtrubridge.com/assets/Uploads/images/Misc-H2-0028-David-Bandsawing.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#top-featured-img {
+    background: url("https://www.davidtrubridge.com/assets/Uploads/images/Misc-H2-0029-D7657.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 100%;
+}
