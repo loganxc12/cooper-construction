@@ -151,7 +151,6 @@ header {
 
 
 .hero-text-box {
-    width: 65%;
     margin: auto;
     text-align: left;
     color: #fff;
@@ -231,7 +230,7 @@ header {
     background-color: #EEE5D4;
     margin-top: 40px;
     color: #1A1A1A;
-    padding: 10px 45px;
+    padding: 10px 30px;
 }
 
 #about-btn:hover {
@@ -401,11 +400,52 @@ header {
 }
 
 
+/***********************************
+====================================
+             ABOUT PAGE
+====================================
+************************************/
+
+.about-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://www.mallardconstruction.com/wp-content/uploads/2012/07/New-Home-Construction.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    position: relative;
+/*    background-position: center;*/
+}
+
+/***********************************
+====================================
+             PROJECTS PAGE
+====================================
+************************************/
+
+.projects-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://www.landvest.com/blog/wp-content/uploads/2013/04/331_feet_of_gently_sloping_private_waterfront_as_well_as_shared_access_to_substantial_granite_pi1.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    position: relative;
+/*    background-position: center;*/
+}
 
 
+/***********************************
+====================================
+             ISLAND PAGE
+====================================
+************************************/
 
 
-
+.island-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/nh.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    position: relative;
+/*    background-position: center;*/
+}
 
 
 .home-images {
