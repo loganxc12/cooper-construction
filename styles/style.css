@@ -221,7 +221,7 @@ header {
     width: 70%;
     height: 250px;
     margin: auto;
-    background: url("https://scontent-iad3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/376290_241772232555807_2107635268_n.jpg?oh=78adf6c8aff0f140ab3ede95f6634bf6&oe=5777055B");
+    background: url("https://c.stocksy.com/a/U4E000/z0/54094.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -231,6 +231,7 @@ header {
     margin-top: 40px;
     color: #1A1A1A;
     padding: 10px 30px;
+    letter-spacing: 0.05em;
 }
 
 #about-btn:hover {
@@ -258,12 +259,12 @@ header {
     display: flex;
     margin-top: 30px;
     margin-bottom: 7px;
-
 }
 
     .featured-projects-title h3 {
         margin: auto;
         font-size: 1.5em;
+        letter-spacing: 0.02em;
     }
 
 .featured-projects-wrapper {
@@ -290,7 +291,7 @@ header {
 
 .project-name {
     margin: auto;
-    display: flex;
+    display: none;
     flex-direction: column;
 /*    text-transform: uppercase;*/
     color: #fff;
@@ -415,6 +416,47 @@ header {
 /*    background-position: center;*/
 }
 
+.about-story {
+    min-height: 600px;
+    background-color: #EEE5D4;
+    display: flex;
+}
+
+.about-story-divider {
+    width: 49%;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#timeline {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#timeline i {
+    font-size: 2em;
+}
+
+#about-top-img {
+    background: url("http://www.pressherald.com/wp-content/uploads/2012/11/portland-press-herald_3694828.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 100%;
+}
+
+#about-bottom-img {
+    background: url("http://i1.trekearth.com/photos/39406/monsadirondack2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 /***********************************
 ====================================
              PROJECTS PAGE
@@ -454,7 +496,7 @@ header {
 }
 
 #bottom-featured-img {
-    background: url("https://www.davidtrubridge.com/assets/Uploads/images/Misc-H2-0028-David-Bandsawing.jpg");
+    background: url("http://a.scpr.org/i/e77452aed2f3ea3325feae8a3a0f42b5/52860-full.jpg");
     background-size: cover;
     background-position: center;
     height: 70%;
@@ -464,7 +506,7 @@ header {
 }
 
 #top-featured-img {
-    background: url("https://www.davidtrubridge.com/assets/Uploads/images/Misc-H2-0029-D7657.jpg");
+    background: url("http://mediad.publicbroadcasting.net/p/michigan/files/201305/New-Home.jpg");
     background-size: cover;
     background-position: center;
     height: 70%;
