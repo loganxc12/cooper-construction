@@ -17,6 +17,15 @@ html, body {
     /* Add default fonts etc*/
 }
 
+.hamburger {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    font-size: 2.5em;
+    color: #fff;
+    display: none;
+}
+
 h1 {
     margin: 0;
     font-size: 98px;
@@ -74,7 +83,7 @@ footer {
 }
 
 .footer-links p {
-    margin-bottom: 35px;
+    margin: 0 10px 35px 10px;
 }
 
 .footer-links a {
@@ -90,10 +99,27 @@ p.signature {
     margin-bottom: 0;
 }
 
+.signature a {
+    border-bottom: 2px solid #fff;
+
+}
+
 
 /* ===================================
             HOMEPAGE HEADER
 ======================================*/
+
+.top-info {
+    background-color: #3767BF;
+    height: 50px;
+    display: none;
+}
+
+    .top-info p, .top-info a {
+        margin: auto;
+        color: #fff;
+    }
+
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/island.jpg);
@@ -104,7 +130,7 @@ header {
 /*    background-position: center;*/
 }
 
-.main-nav{
+.main-nav {
     width: 85%;
     margin-left: 7.5%;
     position: absolute;
@@ -185,6 +211,19 @@ header {
         HOMEPAGE ABOUT SECTION
 ======================================*/
 
+.mobile-about {
+    margin: auto;
+    color: #fff;
+    display: none;
+    width: 80%;
+    padding: 50px 0;
+}
+
+.mobile-about a {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
 .about-banner {
     min-height: 400px;
     background-color: #1A1A1A;
@@ -228,6 +267,7 @@ header {
 
 #about-btn {
     background-color: #EEE5D4;
+    margin: 0 auto;
     margin-top: 40px;
     color: #1A1A1A;
     padding: 10px 30px;
@@ -429,6 +469,10 @@ header {
     padding-bottom: 40px;
 }
 
+.about-story-divider h2 {
+    font-size: 1.9em;
+}
+
 #timeline {
     text-align: center;
     display: flex;
@@ -511,4 +555,72 @@ header {
     background-position: center;
     height: 70%;
     width: 100%;
+}
+
+/***********************************
+====================================
+             MEDIA QUERIES
+====================================
+************************************/
+
+@media (max-width: 767px) {
+    .main-nav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hero-text-box h1 {
+        text-align: center;
+        font-size: 70px;
+        padding: 0 15px;
+    }
+    .hero-text-box p br {
+        display: none;
+    }
+    .hero-text-box p {
+        width: 80%;
+        margin: 40px auto;
+        text-align: center;
+    }
+    .down-arrow {
+        margin: 0;
+    }
+    .top-info {
+        display: flex;
+    }
+    .about-divider {
+        display: none;
+    }
+    .about-paragraph {
+        display: none;
+    }
+    .mobile-about {
+        display: flex;
+        flex-flow: column;
+    }
+    .featured-projects-wrapper {
+        flex-direction: column;
+    }
+    .featured-project:first-child {
+        margin-left: 20px;
+    }
+    .featured-project:last-child {
+        margin-right: 20px;
+    }
+    .island-banner-title h1 {
+        font-size: 70px;
+    }
+    .island-banner-title br {
+        display: none;
+    }
+    .island-banner-title {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 350px) {
+    .down-arrow {
+        display: none;
+    }
 }
