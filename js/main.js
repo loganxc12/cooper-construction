@@ -8,5 +8,12 @@ $( document ).ready(function() {
      $(".close-btn").on("click", function() {
         $(".mobile-menu").css("display", "none");
     })
+     
+    $(".main-nav [href]").each(function() {
+    if (this.href == window.location.href) {
+        $(this).addClass("active");
+        }
+    });
     
 });
+    

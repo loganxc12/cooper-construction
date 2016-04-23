@@ -81,6 +81,10 @@ a {
     text-decoration: none;
 }
 
+.center-align {
+    text-align: center;
+}
+
 .row {
     max-width: 2040px;
     margin: 0 auto;
@@ -141,6 +145,10 @@ p.signature {
 .signature a {
     border-bottom: 2px solid #fff;
 
+}
+
+.active {
+    border-bottom: 2px solid #fff;
 }
 
 
@@ -207,6 +215,10 @@ header {
 
     .main-nav a:hover {
         border-bottom: 2px solid #fff;
+    }
+
+    a.logo {
+        border-bottom: none;
     }
 
     a.logo:hover {
@@ -501,8 +513,8 @@ header {
 ************************************/
 
 .about-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://www.mallardconstruction.com/wp-content/uploads/2012/07/New-Home-Construction.jpg");
-    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/island.jpg);
+    height: 40vh;
     background-size: cover;
     display: flex;
     position: relative;
@@ -515,11 +527,34 @@ header {
     display: flex;
 }
 
-.about-story-divider {
-    width: 49%;
-    padding-left: 100px;
+.story-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.story-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    margin-top: 15px;
+}
+
+#roman {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 0 auto;
+    
+}
+
+.story-wrapper h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin: 20px 0 3px 0;
 }
 
 .about-story-divider h2 {
@@ -616,6 +651,12 @@ header {
 ====================================
 ************************************/
 
+@media (max-width: 1000px) {
+    .story-wrapper {
+        width: 65%;
+    }
+}
+
 @media (max-width: 767px) {
     .main-nav {
         display: none;
@@ -669,6 +710,9 @@ header {
     }
     .island-banner-title {
         padding: 30px;
+    }
+    .story-wrapper {
+        width: 80%;
     }
 }
 
