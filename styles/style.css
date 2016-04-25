@@ -624,6 +624,7 @@ p.signature {
 
 .share-buttons i {
     padding: 10px;
+    cursor: pointer
 }
 
 .share-buttons i:first-child:hover {
@@ -717,6 +718,40 @@ p.signature {
 
 /***********************************
 ====================================
+             CONTACT PAGE
+====================================
+************************************/
+
+.contact {
+    width: 100%;
+    min-height: 500px;
+    background-color: #EEE5D4;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #1A1A1A;
+}
+
+.contact-title {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 2.8em;
+    margin: 10px 0 30px 0;
+}
+
+/***********************************
+====================================
              MEDIA QUERIES
 ====================================
 ************************************/
@@ -784,9 +819,28 @@ p.signature {
     .story-wrapper {
         width: 80%;
     }
+    .island-showcase li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .island-showcase li {
+        width: 100%;
+    }
+    .hero-text-box h1 {
+        font-size: 50px;
+    }
+    .island-banner-title h1 {
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 350px) {
+    .hero-text-box h1 {
+        font-size: 50px;
+        padding-top: 50px;
+    }
     .down-arrow {
         display: none;
     }
