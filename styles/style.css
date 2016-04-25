@@ -169,7 +169,7 @@ p.signature {
 
 
 .home-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/island.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://imagesus-ssl.homeaway.com/mda01/d7f6c9e3-7bb2-46e3-bde7-6cea2a11c171.1.10");
     height: 100vh;
     background-size: cover;
     display: flex;
